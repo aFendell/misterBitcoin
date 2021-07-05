@@ -1,6 +1,0 @@
-<form #form="ngForm" class="signup" (ngSubmit)="form.valid && onSignup()">
-        <label for="name"></label>
-        <input type="text" id="name" [(ngModel)]="name" name="name" placeholder="User Name" #username="ngModel" required minlength="3">
-        <div class="errors" *ngIf="!username.valid && username.touched">* User name is invalid</div>
-        <button>Signup</button>
-</form>
