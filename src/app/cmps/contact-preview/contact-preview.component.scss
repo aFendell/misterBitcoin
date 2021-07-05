@@ -1,0 +1,32 @@
+@import "../../../assets/styles/setup/variables";
+
+.contact-preview {
+    width: 350px;
+    display: flex;
+    box-shadow: 0 7px 30px -10px $clr2;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+
+    &:hover{
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px $clr3;
+    }
+    
+    img {
+        // margin-right: 1rem;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0 7px 30px -10px $clr2;
+    }
+}
+
+@media(max-width: $mobile-breakpoint) {
+    .contact-preview {
+        margin: 0;
+        width: 75vw;
+    }
+}

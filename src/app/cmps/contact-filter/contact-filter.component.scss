@@ -1,0 +1,13 @@
+@import "../../../assets/styles/setup/variables.scss";
+
+.contact-filter {
+
+    input {
+        // margin-left: 1rem;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        font-family: inherit;
+        font-size: inherit;
+        color: $clr2;
+    }
+}

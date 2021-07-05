@@ -1,0 +1,7 @@
+<div class="contact-page">
+    <div class="list-panel">
+        <a routerLink="/contact/edit"><img class="icon" src="../../../assets/imgs/plus-solid.svg" alt=""></a>
+        <contact-filter [filterBy]="filterBy" (onFilter)="onSetFilter($event)"></contact-filter>
+    </div>
+    <contact-list [contacts]="contacts$|async"></contact-list>
+</div>

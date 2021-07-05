@@ -1,0 +1,25 @@
+<div  class="contact-details">
+    <div class="details-action">
+        <a (click)="onBack()"><img class="icon" src="../../../assets/imgs/chevron-left-solid.svg" alt=""></a>
+        <a [routerLink]="['/contact', contact?._id, 'edit']"><img class="icon" src="../../../assets/imgs/edit-solid.svg"
+                alt=""></a>
+        <a (click)="onDeleteContact()"><img class="icon" src="../../../assets/imgs/trash-alt-solid.svg" alt=""></a>
+    </div>
+    <div class="details-content">
+
+        <div class="contact-info">
+            <img src="https://robohash.org/set_set5/${{contact?._id}}?size=300x300" alt="">
+            <p><span>Name:</span> {{contact?.name}}</p>
+            <p><span>eMail:</span> {{contact?.email}}</p>
+            <p><span>Phone:</span> {{contact?.phone}}</p>
+        </div>
+        <div class="moves-info">
+            <transfer-fund class="transfer-container" [contact]="contact" [amount]="amount" (onTransfer)="onTransfer($event)"></transfer-fund>
+            <move-list [contact]="contact" [movesToDisplay]="movesToDisplay" [title]="title"></move-list>
+        </div>
+    </div>
+
+    <div class="contact-edit">
+        <router-outlet></router-outlet>
+    </div>
+</div>

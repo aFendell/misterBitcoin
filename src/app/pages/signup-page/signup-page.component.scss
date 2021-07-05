@@ -1,0 +1,31 @@
+@import "../../../assets/styles/setup/typography.scss";
+@import "../../../assets/styles/setup/variables.scss";
+
+.signup {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    margin: 3rem auto;
+
+    input {
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+        padding: 0.75rem;
+        font-family: inherit;
+        font-size: inherit;
+        color: $clr2;
+    }
+
+    button {
+        margin-top: 2rem;
+        padding: 0.75rem;
+        border-radius: 0.25rem;
+    }
+
+    .errors {
+        color: rgb(241, 82, 82);
+    }
+    
+}

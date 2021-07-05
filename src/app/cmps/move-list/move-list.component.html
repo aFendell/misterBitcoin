@@ -1,0 +1,9 @@
+<div class="move-list">
+    <h4>{{title}}</h4>
+    <div *ngIf="contact; else userMoves" class="moves" >
+        <move-preview *ngFor="let move of movesToDisplay" [move]="move"></move-preview>
+    </div>
+    <ng-template #userMoves>
+        <move-preview *ngFor="let move of filteredUserMoves" [move]="move"></move-preview>
+    </ng-template>
+</div>

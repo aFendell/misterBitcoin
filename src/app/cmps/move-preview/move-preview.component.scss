@@ -1,0 +1,14 @@
+@import "../../../assets/styles/setup/variables";
+
+.move-preview {
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 7px 30px -10px $clr2;
+    // margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    // cursor: pointer;
+    // align-items: center;
+    
+}
