@@ -3,6 +3,7 @@
 
 
 .main-container {
+    // height: 85vh;
     display: grid;
     grid-template-columns:
         minmax(2rem, 1fr)
@@ -36,6 +37,16 @@
             minmax(170px, 1fr);
     }
 }
+
+// .app-header {
+//     height: 15vh !important;
+// }
+// .app-main {
+//     height: 80vh !important;
+// }
+// .app-footer {
+//     height: 5vh !important;
+// }
 
 // Main Header Layout
 
